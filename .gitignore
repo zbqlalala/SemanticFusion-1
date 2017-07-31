@@ -3,6 +3,11 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# VSCODE
+.build/
+.vscode/
+.idea/
+
 # User-specific files
 *.suo
 *.user
