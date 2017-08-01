@@ -3,7 +3,7 @@ from pylab import *
 
 import caffe
 # sys.path.insert(0, '/home/hoangqc/Desktop/GitHub/caffe/examples/')
-caffe_root = '/home/hoangqc/Desktop/GitHub/caffe/'
+caffe_root = '/home/hoangqc/Desktop/GitHub/caffe-enet/'
 
 import os
 os.chdir('/home/hoangqc/Desktop/GitHub/caffe/examples');
