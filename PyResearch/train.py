@@ -144,7 +144,7 @@ if __name__ == '__main__':
                         help='Divider for # of features to use')
     parser.add_argument('--resume', nargs='?', type=str, default=None,    
                         help='Path to previous saved model to restart from')
-    parser.add_argument('--visdom', nargs='?', type=bool, default=False, 
+    parser.add_argument('--visdom', nargs='?', type=bool, default=False,
                         help='Show visualization(s) on visdom | False by  default')
     args = parser.parse_args()
     train(args)

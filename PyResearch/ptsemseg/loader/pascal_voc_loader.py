@@ -12,6 +12,8 @@ import glob
 from tqdm import tqdm
 from torch.utils import data
 
+import platform
+
 def get_data_path(name):
     """Extract path to data from config file.
 
@@ -21,7 +23,11 @@ def get_data_path(name):
     Returns:
         (str): The path to the root directory containing the dataset.
     """
-    js = open('config.json').read()
+    configFile = 'config.json'
+    if platform.system() == 'Windows':
+        configFile = 'config-windows.json'
+
+    js = open(configFile).read()
     data = json.loads(js)
     return os.path.expanduser(data[name]['data_path'])
 
